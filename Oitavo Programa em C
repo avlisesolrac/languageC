@@ -1,0 +1,34 @@
+/*
+  Name: Oitavo Programa em C
+  Copyright: -
+  Author: Carlos Eduardo Silva
+  Date: 13/09/15 19:49
+  Description: Dados números inteiros n e k, com k >= 0, determinar n^k
+  (n elevado a k). Por exemplo, dados os números 3 e 4 o seu programa deve
+  escrever o número 81.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void)
+{
+    int n, k, potencia = 1;
+    
+    printf("Digite o valor da base: ");
+    scanf("%d", &n);
+    
+    printf("Digite o valor do expoente:");
+    scanf("%d", &k);
+    
+    while (k >= 1)
+    {
+          potencia = potencia * n;
+          k = k - 1;
+    }
+    
+    printf("A potencia de %d elevado a %d eh: %d\n\n", n, k, potencia);
+    
+    system("pause");
+    return 0;
+}
