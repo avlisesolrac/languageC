@@ -1,0 +1,31 @@
+/*
+  Name: Décimo Primeiro Programa em C.
+  Copyright: -
+  Author: Carlos Eduardo Silva
+  Date: 13/09/15 20:38
+  Description: Escreva um programa que leia 2 números inteiros e imprima o maior.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void)
+{
+    int Num1, Num2, Maior;
+    
+    printf("Digite o primeiro numero: ");
+    scanf("%d", &Num1);
+    
+    printf("Digite o segundo numero: ");
+    scanf("%d", &Num2);
+    
+    if (Num1 >= Num2)
+       Maior = Num1;
+    else
+        Maior = Num2;
+    
+    printf("O maior numero eh: %d\n\n", Maior);
+    
+    system("pause");
+    return 0;
+}
