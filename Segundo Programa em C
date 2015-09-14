@@ -16,7 +16,7 @@ int main (void)
 
     /* Início do programa. */
     
-    printf("Impressao deve ser colocado as seguintes sequências: %%d e \\n");
+    printf("Impressao deve ser colocado as seguintes sequências: %%d e \\n\n\n");
     
     /* Fim do programa. */
     
