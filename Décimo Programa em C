@@ -1,0 +1,27 @@
+/*
+  Name: Décimo Programa em C.
+  Copyright: -
+  Author: Carlos Eduardo Silva
+  Date: 13/09/15 20:31
+  Description: Escreva um programa em C que leia um número inteiro e devolve
+  o seu valor absoluto.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void)
+{
+    int Number;
+    
+    printf("Digite um numero qualquer: ");
+    scanf("%d", &Number);
+    
+    if (Number < 0)
+       Number = -Number;
+    
+    printf("O valor absoluto eh: |%d|\n\n", Number);
+    
+    system("pause");
+    return 0;
+}
