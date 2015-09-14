@@ -1,0 +1,25 @@
+/*
+  Name: Segundo Programa em C.
+  Copyright: -
+  Author: Carlos Eduardo Silva
+  Date: 13/09/15 18:47
+  Description: Exemplo de como apresentar os caracteres %d e \n.
+*/
+
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void)
+{
+    /* Segundo programa em C */
+
+    /* Início do programa. */
+    
+    printf("Impressao deve ser colocado as seguintes sequências: %%d e \\n");
+    
+    /* Fim do programa. */
+    
+    system("pause");
+    return 0;
+}
