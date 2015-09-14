@@ -1,0 +1,29 @@
+/*
+	Name: Décimo Quinto Programa em C
+	Copyright: -
+	Author: Carlos Eduardo Silva
+	Date: 14/09/15 12:23
+	Description: Dado um inteiro n > 0, calcular a soma dos dígitos de n.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void)
+{
+	int n, sum = 0, aux;
+	
+	printf("Digite um numero qualquer para saber a soma dos algarismos: ");
+	scanf("%d", &n);
+	
+	while (n > 0){
+		aux = n % 10;
+		sum = sum + aux;
+		n = n / 10;
+	}
+	
+	printf("A soma dos digitos do numero digitado resultou em: %d\n\n", sum);
+	
+	system("pause");
+	return 0;
+}
