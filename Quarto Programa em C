@@ -1,0 +1,29 @@
+/*
+  Name: Quarto Programa em C.
+  Copyright: -
+  Author: Carlos Eduardo Silva
+  Date: 13/09/15 19:08
+  Description: Programa para demonstrar a leitura de dois valores inteiros.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void)
+{
+    /* declarações de variáveis. */
+    
+    int num1, num2;
+    
+    /* início do programa. */
+    
+    printf("Entre com dois numeros inteiros: ");
+    scanf("%d %d", &num1, &num2);
+    
+    printf("Os numeros lidos foram %d e %d\n", num1, num2);
+    
+    /* fim do programa. */
+    
+    system("pause");
+    return 0;
+}
