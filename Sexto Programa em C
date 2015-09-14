@@ -1,0 +1,31 @@
+/*
+  Name: Sexto Programa em C.
+  Copyright: -
+  Author: Carlos Eduardo Silva
+  Date: 13/09/15 19:30
+  Description: Dada uma sequência de números inteiros diferentes de zero,
+  terminada por um zero, imprima o quadrado de cada número da sequência.
+*/
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void)
+{
+    int number, quad;
+    
+    printf("Digite um valor para saber seu quadrado, diferente de 0: ");
+    scanf("%d", &number);
+    
+    while (number != 0)
+    /* Os símbolos '!=' significam diferente */
+    {
+          quad = number * number;
+          printf("O quadrado de %d eh: %d\n\n", number, quad);
+          printf("Digite o valor do proximo quadrado: ");
+          scanf("%d", &number);
+    }
+    printf("Voce digitou o valor 0 e consequentemente termina o programa!\n\n");
+    
+    system("pause");
+    return 0;
+}
