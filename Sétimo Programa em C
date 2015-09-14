@@ -1,0 +1,30 @@
+/*
+  Name: Sétimo Programa em C
+  Copyright: -
+  Author: Carlos Eduardo Silva
+  Date: 13/09/15 19:39
+  Description: Dada uma sequência de números inteiros diferentes de zero,
+  terminada por zero, calcular o somatório dos números da sequência.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void)
+{
+    int Num, Sum = 0;
+    
+    printf("Digite o primeiro valor do somatório, diferente de 0:");
+    scanf("%d", &Num);
+    
+    while (Num != 0)
+    {
+          Sum = Sum + Num;
+          printf("Digite o valor para a próxima soma: ");
+          scanf("%d", &Num);
+    }
+    printf("O somatório dos numeros digitados resultou em: %d\n\n", Sum);
+    
+    system("pause");
+    return 0;
+}
