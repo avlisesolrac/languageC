@@ -1,0 +1,35 @@
+/*
+  Name: Quinto Programa em C.
+  Copyright: -
+  Author: Carlos Eduardo Silva
+  Date: 13/09/15 19:15
+  Description: Exemplo de atribuições
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void)
+{
+    /* Declarações de variáveis. */
+    
+    int num1, num2, soma;
+    
+    /* Início do programa. */
+    
+    printf("Entre com dois números inteiros: ");
+    scanf("%d %d", &num1, &num2);
+    
+    printf("Os numeros lidos foram %d e %d\n", num1, num2);
+    
+    /* Atribuição dos valores lidos para a variável soma. */
+    
+    soma = num1 + num2;
+    
+    printf("O resultado da soma de %d com %d eh igual a: %d\n", num1, num2, soma);
+    
+    /* Fim do programa. */
+    
+    system("pause");
+    return 0;
+}
