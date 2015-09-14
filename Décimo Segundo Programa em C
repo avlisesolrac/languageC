@@ -1,0 +1,35 @@
+/*
+  Name: Décimo Segundo Programa em C.
+  Copyright: -
+  Author: Carlos Eduardo Silva
+  Date: 13/09/15 21:12
+  Description: Dados um número inteiro n > 0 e uma sequência com n números
+  inteiros, determinar a soma dos inteiros positivos da sequência. Por exemplo,
+  para n = 7 e para a sequência com n = 7 números inteiros.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void)
+{
+    int n, aux, sum = 0;
+    
+    printf("Digite o valor de quantos números deseja digitar: ");
+    scanf("%d", &n);
+    
+    while(n >= 1)
+    {
+            printf("Digite o valor do somatorio: ");
+            scanf("%d", &aux);
+            
+            if(aux > 0 )
+                   sum = sum + aux;
+    n = n - 1;
+    }
+    
+    printf("O somatorio eh: %d\n\n", sum);
+    
+    system("pause");
+    return 0;
+}
