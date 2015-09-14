@@ -1,0 +1,23 @@
+/*
+  Name: Terceiro Programa em C.
+  Copyright: -
+  Author: Carlos Eduardo Silva
+  Date: 13/09/15 19:03
+  Description: Exemplo de utilização do scanf com duas variaveis.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void)
+{
+    int num1, num2;
+    
+    printf("Digite os valores para Num1 e Num2: ");
+    scanf("%d %d", &num1, &num2);
+    
+    printf("%d", num1 + num2\n\n);
+    
+    system("pause");
+    return 0;
+}
