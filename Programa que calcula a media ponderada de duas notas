@@ -1,0 +1,33 @@
+/*
+	Name: Programa que calcula a media ponderada de duas notas
+	Copyright: -
+	Author: Carlos Eduardo Silva
+	Date: 18/09/15 12:42
+	Description: Faça um programa que tenha como
+	entrada de dados duas notas de um aluno,
+	calcule e apresente a média ponderada,
+	sabendo que a primeira nota tem peso 2,5
+	e que a segunda nota tem peso 4,5.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+# define P1  2.5
+# define P2  4.5
+
+int main (void){
+	float nota, nota2, media;
+	
+	printf("Digite o valor da primeira nota: ");
+	scanf("%f", &nota);
+	
+	printf("Digite o valor da segunda nota: ");
+	scanf("%f", &nota2);
+	
+	media = (nota* P1 + nota2*P2)/ (P1 + P2);
+	
+	printf("A media ponderada eh: %.2f\n\n", media);
+	
+	system("pause");
+	return 0;
+}
