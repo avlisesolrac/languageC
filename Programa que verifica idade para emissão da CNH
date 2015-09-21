@@ -1,0 +1,29 @@
+/*
+  Name: Programa que verifica idade para emissão da CNH
+  Copyright: -
+  Author: Carlos Eduardo Silva
+  Date: 20/09/15 19:05
+  Description: Idade para emissão da carteira de motorista
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main(void){
+    int idade, x;
+    
+    printf("Qual a sua idade? ");
+    scanf("%d", &idade);
+    
+    if(idade >= 18){
+             printf("\n\nVoce tem %d anos.\n", idade);
+             printf("Pode tirar a carteira.\n\n\n");
+    }else{
+          printf("\n\nVoce nao pode tirar a carteira. ");
+          x = 18 - idade;
+          printf("Ainda falta(m) %d anos.\n\n\n", x);
+    }
+    
+    system("pause");
+    return 0;
+}
