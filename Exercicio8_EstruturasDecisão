@@ -23,8 +23,8 @@ int main (void) {
     float valorTotal;
     int diasHospedagem;
     
-    printf("\t\t\t==A Diaria no Hotel custa R$%i,00==\n"
-            "\t\t\tQuantos dias o cliente ficou hospedado?\n\t\t\tDIAS: ", diaria);
+    printf("\t\t==A Diaria no Hotel custa R$%i,00==\n"
+            "\t\tQuantos dias o cliente ficou hospedado?\n\t\tDIAS: ", diaria);
     scanf("%i", &diasHospedagem);
     
     printf("\n\n");
