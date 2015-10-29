@@ -24,7 +24,9 @@ int main (void){
 	printf("Quantas pecas voce quer comprar: ");
 	scanf("%i", &quantPeca);
 	
-	printf("O valor total da compra eh: R$%.2f.\n\n", valorTotal = valorUnit * quantPeca);
+	printf("O Codigo da peca eh: %s\n"
+			"O valor total da compra eh: R$%.2f.\n",
+			 codigoPeca, valorTotal = valorUnit * quantPeca);
 	
 	system("pause");
 	
