@@ -1,0 +1,33 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg17 - Slide34
+
+a) Uma empresa produz peças para a industria automobilistica e necessita saber o valor
+total de cada uma, para tanto é fornecido ao computador o código da peça, o valor
+unitario da peça e a quantidade de peças produzidas. No final é apresentado na tela
+o código da peça e o seu valor total.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void){
+	char codigoPeca[10];
+	int quantPeca;
+	float valorUnit, valorTotal;
+	
+	printf("Qual codigo da peca que deseja comprar: ");
+	scanf("%s", codigoPeca);
+	
+	printf("Qual o valor unitario da peca %s: ", codigoPeca);
+	scanf("%f", &valorUnit);
+	
+	printf("Quantas pecas voce quer comprar: ");
+	scanf("%i", &quantPeca);
+	
+	printf("O valor total da compra eh: R$%.2f.\n\n", valorTotal = valorUnit * quantPeca);
+	
+	system("pause");
+	
+	//getchar(); Use essa função se o sistema para compilar esse codigo não for Windows.
+	return 0;
+}
