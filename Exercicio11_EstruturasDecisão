@@ -1,0 +1,14 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg62 - Slide67
+
+2) A cidade de São Paulo tem uma lei que restringe a circulação de carros numa
+determinada área conhecida como "Centro Expandido". Com base no número final da placa,
+o motorista sabe se deve ou não circular no horário proibido. Faça um programa que
+receba um número inteiro correspondente aos dígitos da placa de um automóvel e verifique
+se é o dia de rodízio do carro ou não. Considere que:
+    Carros com placa com final 1 ou 2: Rodizio na Segunda-feira;
+    Carros com placa com final 3 ou 4: Rodizio na Terça-feira;
+    Carros com placa com final 5 ou 6: Rodizio na Quarta-feira;
+    Carros com placa com final 7 ou 8: Rodizio na Quinta-feira;
+    Carros com placa com final 9 ou 0: Rodizio na Sexta-feira;
+*/
