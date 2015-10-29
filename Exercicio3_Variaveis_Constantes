@@ -16,6 +16,8 @@ int main (void) {
 	printf("A soma dos numeros %.2f + %.3f eh: %.3f\n\n",
 			numReal, numReal2, numReal+numReal2);
 	
+	/*system("pause"); Use essa função se o sistema para compilar esse codigo for Windows.
+	Para permanecer na tela, para que não feche imediatamente.*/
 	getchar();
 	return 0;
 }
