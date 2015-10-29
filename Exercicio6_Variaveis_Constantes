@@ -1,0 +1,37 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg26 - Slide51
+
+c) Uma indústria de automóveis quer premiar um de seus funcionários no final do ano com
+um carro 0 km. Cada empregado teve direito a um bilhete com um número de quatro dígitos.
+O vencedor será aquele que tiver o bilhete cujo número é a combinação dos dois primeiros
+prêmios do último concurso do ano da Loteria Federal. A composição do número do bilhete
+premiado é formada pelos dois últimos dígitos do primeiro prêmio multiplicado pelos dois
+últimos dígitos do segundo prêmio. Por exemplo, número do primeiro prêmio: 18959, número
+do segundo prêmio: 04133, o bilhete ganhador é o número 1947(59*33). Faça um programa que
+receba os valores da Loteria Federal, gere e mostre o número premiado.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main(void){
+	int bilheteAnt, bilhetePost;
+	int teste = 18959;
+	
+	printf("Digite o valor do primeiro bilhete do ultimo concurso da Loteria Federal: ");
+	scanf("%i", &bilheteAnt);
+	
+	printf("Digite o valor do segundo bilhete do ultimo concurso da Loteria Federal: ");
+	scanf("%i", &bilhetePost);
+	
+	bilheteAnt %= 100;
+	printf("%i", bilheteAnt);
+	bilhetePost %= 100;
+	printf("%i", bilhetePost);
+	
+	printf("\nO bilhete premiado foi o: %i\n\n", bilheteAnt*bilhetePost);
+	
+	system("pause");
+	//getchar(); Use essa função se o sistema para compilar esse codigo não for Windows.
+	return 0;
+}
