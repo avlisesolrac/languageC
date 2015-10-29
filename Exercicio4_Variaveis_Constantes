@@ -1,0 +1,25 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg26 - Slide51
+
+b) Elaborar um programa que solicite ao usuário um inteiro (raio de uma esfera) e
+exiba o volume dessa esfera com base na seguinte definição V = 4 * PI * R*R*R
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void){
+	float const PI = 3.14;
+	float volume;
+	int raio;
+	
+	printf("Digite o valor do raio: ");
+	scanf("%i", &raio);
+	
+	printf("O volume da esfera de raio %i eh: %.2fcm Cubicos\n\n",
+			raio, volume = (4 * PI * (raio * raio * raio))/3);
+
+	system("pause");
+	//getchar(); Use essa função se o sistema para compilar esse codigo não for Windows.
+	return 0;
+}
