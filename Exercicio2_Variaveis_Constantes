@@ -1,0 +1,1126 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg17 - Slide34
+
+b) Para realizar uma pesquisa com um grupo de 50 pessoas, foram obtidos os seguintes
+dados de cada pessoa: nome, idade, sexo e salario e depois do processamento foi informado
+pelo computador: A quantidade de mulheres entrevistadas, a quantidade de homens
+entrevistados e a soma total do salario de todos os entrevistados.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void) {
+	char nomePessoa[40];
+	int idade, qtdMulher = 0, qtdHomem = 0, sexo;
+	float salario, somaSalarios = 0;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else if(sexo == 1){
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("Digite o nome do entrevistado: ");
+	scanf("%s", &nomePessoa);
+	
+	printf("Digite a idade do entrevistado: ");
+	scanf("%i", &idade);
+	
+	printf("Digite o sexo do entrevistado [0]-> Homem || [1]-> Mulher: ");
+	scanf("%i", &sexo);
+	
+	if(sexo == 0){
+		++qtdHomem;
+	}else{
+		++qtdMulher;
+	}
+	
+	printf("Qual o salario do entrevistado: ");
+	scanf("%f", &salario);
+	
+	somaSalarios += salario;
+	
+	printf("\n\nA quantidade de mulher(es) entrevistadas foi de: %i\n"
+			"A quantidade de homem(ns) entrevistados foi de: %i\n"
+			"A soma total dos salarios coletados foi de: R$%.2f\n\n",
+			qtdMulher, qtdHomem, somaSalarios);
+	
+	system("pause");
+	//getchar(); Use essa função se o sistema para compilar esse codigo não for Windows.
+	return 0;
+}
