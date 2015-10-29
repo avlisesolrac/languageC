@@ -1,0 +1,51 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg62 - Slide62
+
+2) Faça um programa que controle o caixa de um hotel para recebimento de pagamento das
+diarias de seus hóspedes. Para o cálculo do valor a pagar, sabe-se que a diária é de
+R$ 95,00 e a taxa de serviços é estipulada de acordo com o número de diárias, conforme
+o descrito abaixo:
+    15% por dia, se o número de diárias for menor do que 10.
+    10% por dia, se o número de diárias for igual a 10.
+    5% por dia, se o número de diárias for maior do que 10.
+    
+    O programa deverá receber o número de dias de hospedagem de um cliente, calcular e
+    apresentar na tela o valor da taxa e o total a ser pago.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+# define ESPACE printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+
+int main (void) {
+    
+    int const diaria = 95;
+    float valorTotal;
+    int diasHospedagem;
+    
+    printf("\t\t\t==A Diaria no Hotel custa R$%i,00==\n"
+            "\t\t\tQuantos dias o cliente ficou hospedado?\n\t\t\tDIAS: ", diaria);
+    scanf("%i", &diasHospedagem);
+    
+    printf("\n\n");
+    
+    if(diasHospedagem < 10){
+        printf("Para %i dias a taxa cobrada sera de 15%%\n", diasHospedagem);
+        valorTotal = diaria*0.15*diasHospedagem+diaria*diasHospedagem;
+        printf("O valor total da hospedagem eh: R$%.2f", valorTotal);
+        ESPACE;
+    }else if(diasHospedagem == 10){
+        printf("Para %i dias a taxa cobrada sera de 10%%\n", diasHospedagem);
+        valorTotal = diaria*0.10*diasHospedagem+diaria*diasHospedagem;
+        printf("O valor total da hospedagem eh: R$%.2f", valorTotal);
+        ESPACE;
+    }else{
+        printf("Para %i dias a taxa cobrada sera de 5%%\n", diasHospedagem);
+        valorTotal = diaria*0.05*diasHospedagem+diaria*diasHospedagem;
+        printf("O valor total da hospedagem eh: R$%.2f", valorTotal);
+        ESPACE;
+    }
+    
+    system("pause");
+    return 0;
+}
