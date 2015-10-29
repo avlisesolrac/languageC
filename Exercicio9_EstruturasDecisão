@@ -1,0 +1,50 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg17 - Slide34
+
+3) Um empresário do ramo de estacionamentos necessita de um programa para seu computador
+que controle o valor a ser pago por cada carro estacionado. Os valores de tabela e
+critérios de cobranças são:
+    1ª. Hora: R$ 8.00
+    2ª. Hora: R$ 15.00
+    A partir da 3ª. Hora: R$ 5.00 a hora
+
+    O tempo de permanência no estacionamento é controlado por horas, não havendo nenhuma
+tolerância. Faça um programa que receba a hora de entrada e a hora de saida, calcule o 
+tempo de permanência e o valor a ser pago, considerando que o funcionamento é em horário
+comercial (das 08:00 às 18:00) e um relógio configurado para 24 horas.
+*/
+
+//Hora -> Minuto = Hora * 60
+//Minuto -> Hora = Minuto / 60
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main(void){
+    
+    int hora, totalHoras, entrada, saida, valorTotal;
+    
+    printf("\t\t>> O estacionamento custa a partir de R$5,00 <<\n"
+            "\t\tHorario precisa estar entre [08] e [18] horas\n"
+            "\t\tQual horario de entrada no estacionamento?\n\t\tENTRADA: ");
+    scanf("%i", &entrada);
+    
+    printf("\t\tQual horario de saida do estacionamento?\n\t\tSAIDA: ");
+    scanf("%i", &saida);
+    
+    totalHoras = saida - entrada;
+    
+    if(totalHoras >= 3){
+        valorTotal = ((totalHoras-2)*5)+15;
+    }else if(totalHoras == 2){
+        valorTotal = 15;
+    }else{
+        valorTotal = 8;
+    }
+    
+    printf("\n\n\t\tO cliente ficou %i horas no estacionamento.\n\t\tTotalizando "
+            "R$%i,00 para pagar!\n\n\n\n\n", totalHoras, valorTotal);
+    
+    system("pause");
+    return 0;
+}
