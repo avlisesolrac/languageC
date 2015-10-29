@@ -13,8 +13,9 @@ int main (void) {
 	float const numReal = 91.37;
 	float const numReal2 = 7.351;
 	
-	printf("A soma dos numeros %.2f + %.3f eh: %.3f\n\n",
-			numReal, numReal2, numReal+numReal2);
+	printf("A soma dos numeros %.2f + %.3f eh: %.3f\n"
+			"O produto dos numeros %.2f * %.3f eh: %.3f\n\n",
+			numReal, numReal2, numReal+numReal2, numReal, numReal2, numReal*numReal2);
 	
 	/*system("pause"); Use essa função se o sistema para compilar esse codigo for Windows.
 	Para permanecer na tela, para que não feche imediatamente.*/
