@@ -1,0 +1,21 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg26 - Slide51
+
+a) Faça um programa que calcule e exiba na tela a soma e o produto de dois números
+reais, a saber: 91.37 e 7.351
+*/
+
+# include <stdio.h>
+//# include <stdlib.h>
+
+int main (void) {
+	
+	float const numReal = 91.37;
+	float const numReal2 = 7.351;
+	
+	printf("A soma dos numeros %.2f + %.3f eh: %.3f\n\n",
+			numReal, numReal2, numReal+numReal2);
+	
+	getchar();
+	return 0;
+}
