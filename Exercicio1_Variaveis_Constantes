@@ -16,7 +16,7 @@ int main (void){
 	float valorUnit, valorTotal;
 	
 	printf("Qual codigo da peca que deseja comprar: ");
-	scanf("%s", codigoPeca);
+	scanf("%s", &codigoPeca);
 	
 	printf("Qual o valor unitario da peca %s: ", codigoPeca);
 	scanf("%f", &valorUnit);
