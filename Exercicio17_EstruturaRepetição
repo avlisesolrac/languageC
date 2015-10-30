@@ -1,0 +1,38 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg39 - Slide78
+
+5) Faça um programa que tenha uma constante armazenando um dado caractere que representa
+uma senha de acesso a um sistema. O programa deverá ler um dado caractere correspondente
+a uma senha e comparar com o valor da constante. Se a senha estiver correta, imprimir
+"Acesso liberado!" e caso contrário, solicitar novamente a digitação da senha, mas
+possibilitando apenas três tentativas.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void){
+	char senhaTentativa[10], senha[10] = "Password";
+	int tentativas = 0, iguais;
+	
+	do{
+		printf("Digite uma senha para ter acesso ao sistema: ");
+		scanf("%s", &senhaTentativa);
+		++tentativas;
+		for(int i = 0; i < 9; ++i){
+			if(senhaTentativa[i] == senha[i] && senhaTentativa[i] != '\0' && senha[i] != '\0'){
+				iguais = 1;
+			}else{
+				iguais = 0;
+			}
+		}
+		
+	}while(tentativas < 3);
+	
+	if(iguais){
+		printf("Acesso liberado!\n\n\n");
+	}
+	
+	system("pause");
+	return 0;
+}
