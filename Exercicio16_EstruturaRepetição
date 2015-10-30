@@ -1,0 +1,24 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg39 - Slide78
+
+5) Faça um programa que aceite somente um número inteiro que esteja fora do intervalo
+entre os números 15 e 75. O programa só será encerrado quando a regra acima for
+cumprida. Mostre ao final o valor digitado.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void){
+	int num;
+	
+	do{
+		printf("Digite um numero qualquer: ");
+		scanf("%i", &num);
+	}while(num <= 15 || num >= 75);
+	
+	printf("O ultimo valor digitado foi: %i!\n\n\n", num);
+
+	system("pause");
+	return 0;
+}
