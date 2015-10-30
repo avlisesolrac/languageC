@@ -12,27 +12,34 @@ possibilitando apenas três tentativas.
 # include <stdlib.h>
 
 int main (void){
-	char senhaTentativa[10], senha[10] = "Password";
-	int tentativas = 0, iguais;
+	char senha[9] = "mudar123";
+	char senhaUsuario[9];
+	int cont = 0,tentativas = 1, i;
 	
-	do{
-		printf("Digite uma senha para ter acesso ao sistema: ");
-		scanf("%s", &senhaTentativa);
-		++tentativas;
-		for(int i = 0; i < 9; ++i){
-			if(senhaTentativa[i] == senha[i] && senhaTentativa[i] != '\0' && senha[i] != '\0'){
-				iguais = 1;
-			}else{
-				iguais = 0;
-			}
-		}
-		
-	}while(tentativas < 3);
+	while(tentativas <= 3 && cont != 9){
 	
-	if(iguais){
-		printf("Acesso liberado!\n\n\n");
-	}
+	printf("Digite uma senha para ter acesso ao sistema: ");
+	scanf("%s", senhaUsuario);
 	
+	for(i = 0; i < 9; ++i){
+            if(senhaUsuario[i] == senha[i]){
+                ++cont;
+            }
+    	}
+ 
+    if(cont == 9){
+        printf("Acesso liberado!\n\n");
+    } else {
+        printf("Acesso nao liberado!\n");
+        ++tentativas;
+        cont -= cont;
+    }
+    }
+    
+    if(cont != 9 && tentativas >= 3){
+        printf("Acesso expirado, voce ja atingiu a cota por hoje!\n\n");
+    }
+    
 	system("pause");
 	return 0;
 }
