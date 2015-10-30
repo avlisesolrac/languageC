@@ -1,0 +1,21 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg39 - Slide78
+
+1) Faça um programa que calcule e imprima os 50 primeiros múltiplos de 5 maiores que zero.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void){
+	
+	for(int i = 1 ; i <= 50; ++i){
+		if(i % 5 == 0)
+			printf("[%i] Multiplo de 5: %i\n", i, i);
+	}
+	
+	printf("\n\n\n");
+	
+	system("pause");
+	return 0;
+}
