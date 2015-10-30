@@ -1,0 +1,38 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg48 - Slide95
+
+3) Dado o programa abaixo, quais os valores impressos após o final
+da execução do mesmo?
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main(void){
+    int vet[9] = {12, 6, 9, 5, 14, 8, 33, 54, 35};
+    
+    int x = 2, y = 3;
+    
+    printf("\n%i", vet[x]);
+    // 9
+    printf("\n\n%i", vet[x + 1]);
+    // 5
+    printf("\n\n%i", vet[x * 2]);
+    // 14
+    printf("\n\n%i", vet[x + y]);
+    // 8
+    printf("\n\n%i", vet[x * y + 2]);
+    // 35
+    printf("\n\n%i", vet[vet[x - 1] + 1]);
+    // 54
+    printf("\n\n%i", vet[vet[x + 1]]);
+    // 8
+    printf("\n\n%i", vet[vet[x + 1] - (y + 1)]);
+    // 6
+    printf("\n\n%i", vet[vet[y + 1] - vet[2 + y]]);
+    // 33
+    printf("\n\n%i\n\n", vet[vet[x * y + 1] % vet[y - x]]);
+    // 12
+    system("pause");
+    return 0;
+}
