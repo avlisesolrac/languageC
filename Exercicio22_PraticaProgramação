@@ -1,0 +1,29 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int main(void){
+    int const QTD = 4;
+    int const LETRAS = 7;
+    char nomes[QTD][LETRAS];
+    int i;
+    
+    //Coletando do usuário caracter por caracter atraves do gets e armazenar na matriz[5][10]
+    for(i = 0; i < QTD; ++i){
+        system("cls");
+        printf("Digite o %i nome: ", i+1);
+        fflush(stdin);
+        gets(nomes[i]);
+    }
+    
+    system("cls");
+    
+    printf("Nomes digitados: ");
+    
+    for(int i = 0; i < QTD; ++i)
+        printf(" %s", nomes[i]);
+        
+    printf("\n\n");
+    
+    system("pause");
+    return 0;
+}
