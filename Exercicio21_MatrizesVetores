@@ -1,0 +1,38 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg48 - Slide95
+
+5) Faça um programa que receba 15 valores reais que devem ser
+armazenados em um vetor. Após a digitação de todos os valores, mostre-os
+na tela, altere todos os valores para sua metade respectiva e imprima
+os resultados atuais.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void){
+  float vetor[15];
+  
+  for(int i = 0; i < 15; ++i){
+    printf("Digite um numero qualquer: ");
+    scanf("%f", &vetor[i]);
+  }
+    
+  printf("\n\nOs numeros digitados foram: \n");
+    
+  for(int i = 0; i < 15; ++i){
+    printf("O [%i] valor: %.1f\n", i+1, vetor[i]);
+  }
+    
+  printf("\n\nAgora sua respectiva metada!\n");
+    
+  for(int i = 0; i < 15; ++i){
+    vetor[i] /= 2;
+    printf("O [%i] valor: %.1f\n", i+1, vetor[i]);
+  }
+    
+  printf("\n\n\n");
+    
+  system("pause");
+  return 0;
+}
