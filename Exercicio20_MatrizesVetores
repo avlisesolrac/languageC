@@ -1,0 +1,31 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg48 - Slide95
+
+4) Faça um programa que receba dados do tipo inteiro suficientes para
+preencher uma matriz quadrada de ordem 7, calcule e mostre a quantidade
+de números ímpares.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void){
+    int const TAM = 7;
+    int matriz[TAM][TAM], impares = 0;
+    
+    for(int linha = 0; linha < TAM; ++linha){
+       for(int coluna = 0; coluna < TAM; ++coluna){
+          printf("Digite um numero inteiro: ");
+          scanf("%i", &matriz[linha][coluna]);
+          if(matriz[linha][coluna] % 2 != 0){
+            ++impares;
+          }
+          printf("\n");
+       }
+    }
+    
+    printf("O numero de impares digitados foi: %i\n\n", impares);
+    
+    system("pause");
+    return 0;
+}
