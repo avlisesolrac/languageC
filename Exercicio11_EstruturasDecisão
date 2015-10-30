@@ -12,3 +12,30 @@ se é o dia de rodízio do carro ou não. Considere que:
     Carros com placa com final 7 ou 8: Rodizio na Quinta-feira;
     Carros com placa com final 9 ou 0: Rodizio na Sexta-feira;
 */
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void){
+	int finalPlaca;
+
+	printf("Digite o ultimo digito da placa do seu carro: ");
+	scanf("%i", &finalPlaca);
+	
+	if(finalPlaca == 1 || finalPlaca == 2){
+		printf("Rodizio somente na Segunda-feira!\n\n");
+	}else if(finalPlaca == 3 || finalPlaca == 4){
+		printf("Rodizio somente na Terca-feira!\n\n");
+	}else if(finalPlaca == 5 || finalPlaca == 6){
+		printf("Rodizio somente na Quarta-feira!\n\n");
+	}else if(finalPlaca == 7 || finalPlaca == 8){
+		printf("Rodizio somente na Quinta-feira!\n\n");
+	}else if(finalPlaca == 9 || finalPlaca == 0){
+		printf("Rodizio somente na Sexta-feira!\n\n");
+	}else{
+		printf("Voce digitou um valor invalido para a placa do carro!\n\n");
+	}
+	
+	system("pause");
+	return 0;
+}
