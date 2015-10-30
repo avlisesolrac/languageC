@@ -1,0 +1,38 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg47 - Slide94
+
+1) Considerando um vetor capaz de armazenar 5 elementos inteiros, mostre:
+   a) Declaração deste vetor;
+   b) Zerar todos os elementos do vetor;
+   c) Exibir os elementos do vetor em ordem crescente de indice;
+   d) Exibir os elementos do vetor em ordem decrescente de índice;
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void){
+	int vetor[5] = {2, 3, 5, 7, 11};
+	
+	for(int i = 0; i < 5; ++i){
+            printf("[%i] ", vetor[i]);
+    }
+    
+    printf("\n\n");
+    
+    for(int i = 4; i >= 0; --i){
+            printf("[%i] ", vetor[i]);
+    }
+    
+    printf("\n\n");
+    
+    for(int i = 0; i < 5; ++i){
+            vetor[i] = 0;
+            printf("[%i] ", vetor[i]);
+    }
+    
+    printf("\n\n");
+    
+	system("pause");
+	return 0;
+}
