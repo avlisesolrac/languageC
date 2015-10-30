@@ -1,0 +1,24 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg39 - Slide78
+
+4) A compra de um apartamento financiado tem o valor de sua prestação duplicada cada
+ano. Sabendo que no primeiro ano o valor a ser pago é de R$ 80,00. Faça um programa
+que calcule e mostre em quantos anos a prestação estará acima de R$ 5.000,00.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void){
+	int prestacao = 80, anos = 1;
+	
+	for( ; prestacao <= 5000; ++anos){
+		prestacao +=80;
+	}
+	
+	printf("A prestacao demorou %i anos para estar em um valor acima de"
+			" R$5.000,00!\n\n", anos);
+
+	system("pause");
+	return 0;
+}
