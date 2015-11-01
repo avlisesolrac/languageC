@@ -1,0 +1,41 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg27 - Slide53
+
+5) Faça um programa que contenha um vetor de strings que:
+	a) Armazene o nome dos seus cinco melhores amigos.
+	b) Verifique qual o nome com o maior número de caracteres.
+	c) Guarde em uma variavel o resultado da concatenação de dois nomes.
+	d) Imprima os nomes armazenados no vetor e na variável do item acima.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+# include <string.h>
+
+int main (void){
+	char nomes[5][10];
+	int nomeMaior = 0, Aux;
+	char concateNomes[10];
+	
+	for(int registro = 0; registro < 5; ++registro){
+			printf("Digite um nome qualquer: ");
+			fflush(stdin);
+			gets(nomes[registro]);
+		if(strlen(nomes[registro]) >= nomeMaior){
+			nomeMaior = strlen(nomes[registro]);
+			Aux = registro;
+			strcpy(concateNomes, nomes[registro]);
+		}
+	}
+	
+	for(int registro = 0; registro < 5; ++registro){
+		printf("[%i]: %s\n",registro, nomes[registro]);
+	}
+	
+	printf("\n\nA string maior esta no [%i] indice: %s", Aux, concateNomes);
+	printf("\n\nA concatenacao resultou em: %s", strcat(concateNomes, nomes[0]));
+	
+	printf("\n\n\n");
+	system("pause");
+	return 0;
+}
