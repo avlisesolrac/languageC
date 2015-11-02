@@ -1,0 +1,27 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int main(void){
+	int *x, *y;
+	
+	x = (int*)malloc(sizeof(int));
+	y = (int*)malloc(sizeof(int));
+	
+	*x = 27;
+	*y = 43;
+	
+	printf("Valor: %i - %i\n\n", *x, *y);
+	*x = *y;
+	
+	printf("Valor: %i - %i\n\n", *x, *y);
+	*x = 27;
+	
+	y = x;
+	
+	printf("Valor: %i - %i\n\n", *x, *y);
+	
+	free(x);
+	
+	system("pause");
+	return 0;
+}
