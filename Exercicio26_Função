@@ -1,0 +1,31 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg48 - Slide95
+
+3) Escreva função que troque o conteúdo de 2 variaveis inteiras passadas como parametro
+por referência.
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+void trocaNum (int *num1, int *num2);
+
+int main (void) {
+    
+    int a = 7, b = 12;
+
+    trocaNum(&a, &b);
+    
+    system("pause");
+    return 0;
+}
+
+void trocaNum (int *num1, int *num2){
+    int aux = *num1;
+    
+    *num1 = *num2;
+    
+    num2 = &aux;
+    
+    printf("Num1: %i\nNum2: %i\n\n", *num1, *num2);
+}
