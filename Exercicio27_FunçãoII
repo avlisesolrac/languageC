@@ -1,0 +1,33 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg43 - Slide86
+
+4) Criar uma função para receber o ano corrente e o ano de nascimento de uma pessoa. Em
+seguida retornar a idade da pessoa.
+
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int idadePessoa(int anoAtual, int anoNascimeto);
+
+int main (void) {
+    int anoAtual, anoNasc, idade;
+    
+    printf("Digite o ano atual:\nEx.: 2015 > ");
+    scanf("%i", &anoAtual);
+    
+    printf("Digite o ano que voce nasceu:\nEx.: 1993 > ");
+    scanf("%i", &anoNasc);
+    
+    idade = idadePessoa(anoAtual, anoNasc);
+    
+    printf("A idade da pessoa que nasceu em %i eh: %i\n\n", anoNasc, idade);
+    
+    system("pause");
+    return 0;
+}
+
+int idadePessoa(int anoAtual, int anoNascimeto){
+    return anoAtual - anoNascimeto;
+}
