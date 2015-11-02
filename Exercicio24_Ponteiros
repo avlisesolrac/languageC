@@ -1,0 +1,36 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg31 - Slide61
+
+2) Codifique um programa que contenha uma variável ponteiro que aponte para um vetor
+de 5 elementos do tipo inteiro, insira dados neste vetor e mostre os mesmos.
+
+OBS.: Não esqueça de terminar esse programa quando ter os conceitos que precisa para
+concluir esse programa.
+
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+# include <string.h>
+
+int main(void){
+	int *pontVet = (int*)malloc(sizeof(int));
+	int vetorInt[5];
+	
+	pontVet = (int*)malloc(sizeof(int));
+
+	for(int i = 0; i < 5; ++i){
+		printf("Digite um numero inteiro: ");
+		pontVet = &vetorInt[i];
+		scanf("%i", *pontVet);
+		//pontVet = &vetorInt[i];
+	}
+	
+	for(int i = 0; i < 5; ++i){
+		printf("%i\n", pontVet[i]);
+	}
+
+	//free(pontVet);
+	system("pause");
+	return 0;
+}
