@@ -1,0 +1,85 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg48 - Slide86
+
+5) Faça um programa que simule uma Calculadora, utilizando para cada operação básica uma
+função. Crie no programa principal um menu de opções conforme o layout abaixo:
+    
+===========================================
+=               Calculadora               =
+=                                         =
+=   Digite o primeiro numero ->           =
+=   Digite o segundo numero ->            =
+=                                         =
+=               Escolha:                  =
+=   1. Adicao                             =
+=   2. Subtracao                          =
+=   3. Multiplicacao                      =
+=   4. Divisao                            =
+=                                         =
+=                         Opcao:          =
+===========================================
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+float a, b;
+int operador;
+
+void adiction(float num, float num2);
+void subtraction(float num3, float num4);
+void multiplication(float num5, float num6);
+void division(float num7, float num8);
+
+int main (void) {
+    do{
+    printf("\t\tCALCULADORA\n\n"
+            "Digite o primeiro numero -> ");
+    scanf("%f", &a);
+    
+    printf("Digite o segundo numero -> ");
+    scanf("%f", &b);
+    
+    printf("\n\n");
+    
+    printf("\t\tESCOLHA:\n\n"
+            "1. Adicao\t\t"
+            "2. Subtracao\n"
+            "3. Multiplicacao\t"
+            "4. Divisao\n"
+            "0. Para Sair!\n\n");
+    printf("Opcao -> ");
+    scanf("%i", &operador);
+    
+    switch(operador){
+        case 1 : adiction(a, b); break;
+        case 2 : subtraction(a, b); break;
+        case 3 : multiplication(a, b); break;
+        case 4 : division(a, b); break;
+        case 0 : printf("Voce decidiu sair do programa!\nAte a proxima!!\n\n"); break;
+        default : printf("Voce digitou um operador invalido!\n\n"); break;
+    }
+    
+    system("pause");
+    system("cls");
+    
+    }while(operador != 0);
+    
+    return 0;
+}
+
+void adiction(float num, float num2){
+        printf("\n\nO resultado da adicao [%i] chegou em: %.2f\n\n", operador, num + num2);
+}
+
+void subtraction(float num3, float num4){
+        printf("\n\nO resultado da subtracao [%i] chegou em: %.2f\n\n", operador, num3 - num4);
+}
+
+void multiplication(float num5, float num6){
+        printf("\n\nO resultado da multiplicacao [%i] chegou em: %.2f\n\n", operador, num5 * num6);
+}
+
+void division(float num7, float num8){
+        printf("\n\nO resultado da multiplicacao [%i] chegou em: %.2f\n\n", operador, num7 / num8);
+}
