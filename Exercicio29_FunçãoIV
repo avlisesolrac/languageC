@@ -1,0 +1,22 @@
+/*
+Arquivo Vania Cristina - 2015_2 Pg43 - Slide86
+
+6) Dado o número do telefone de uma residência, o número de pulsos registrados para
+chamadas locais e o valor total de todas as chamadas interurbanas, fazer um programa
+em C que controle a conta telefônica de 50 residências contendo as seguintes funções:
+
+    a) Para entrada dos dados (variáveis locais);
+    b) Para cálculo do valor total da conta telefônica. Sabendo-se que o valor total
+    da conta telefônica = numero de pulsos locais * 0.127 + valor total de interurbanos;
+*/
+
+# include <stdio.h>
+# include <stdlib.h>
+
+int main (void) {
+
+    
+
+    system("pause");
+    return 0;
+}
