@@ -1,0 +1,33 @@
+# include <stdio.h>
+# include <stdlib.h>
+# include <string.h>
+
+int main(void){
+	int *p1, *p2, p3;
+	char *x1, *x2, x3[7];
+	
+	p1 = (int*)malloc(sizeof(int));
+	p2 = (int*)malloc(sizeof(int));
+	x1 = (char*)malloc(7*sizeof(char));
+	x2 = (char*)malloc(7*sizeof(char));
+	*p1 = 7;
+	strcpy(x1, "teste");
+	*p2 = 15;
+	strcpy(x2, "aula");
+	p3 = 11;
+	strcpy(x3, "prova");
+	p1 = p2;
+	p2 = &p3;
+	strcpy(x2, x3);
+	strcpy(x1, x3);
+	printf("%i\n", *p1);
+	printf("%i\n", *p2);
+	printf("%i\n", p3);
+	
+	printf("%s\n", x1);
+	printf("%s\n", x2);
+	printf("%s\n", x3);
+	
+	system("pause");
+	return 0;
+}
