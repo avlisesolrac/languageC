@@ -1,0 +1,37 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+float x, y;
+
+void adicao(){
+	float soma;
+	soma = x + y;
+	printf("Resultado = %.2f", soma);
+}
+
+void tela(){
+	system("cls");
+	printf("Soma de dois numeros reais\n\n");
+	printf("Utilizando Sub-rotinas\n\n\n");
+}
+
+void inicio(){
+	tela();
+	printf("Entre com o 1o. numero: ");
+	scanf("%f", &x);
+	
+	printf("Entre com o 2o. numero: ");
+	scanf("%f", &y);
+	
+	printf("\n");
+	
+	adicao();
+	
+	printf("\n\n\n");
+	system("pause");
+}
+
+int main (void) {
+	inicio();
+	return 0;
+}
