@@ -1,0 +1,32 @@
+# include <stdio.h>
+# include <stdlib.h>
+# include <string.h>
+
+int main(void){
+	char *x, *y;
+	
+	x = (char*)malloc(12*sizeof(char));
+	y = (char*)malloc(12*sizeof(char));
+	
+	strcpy(x, "Estruturas");
+	strcpy(y, "de Dados");
+	
+	printf("%s %s\n\n", x, y);
+	
+	strcpy(y, x);
+	
+	printf("%s %s\n\n", x, y);
+	
+	strcpy(y, "de Dados");
+	
+	printf("%s%s\n\n", x, y);
+	
+	x = y;
+	
+	printf("%s%s\n\n", x, y);
+	
+	free(x);
+	
+	system("pause");
+	return 0;
+}
