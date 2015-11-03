@@ -13,10 +13,22 @@ em C que controle a conta telefônica de 50 residências contendo as seguintes f
 # include <stdio.h>
 # include <stdlib.h>
 
-int main (void) {
+void enterData(int *telefone, int *pulLocal, int *pulInter);
 
+int main (void) {
     
+    int *a, *b, *c;
+    
+    enterData(a, b, c);
 
     system("pause");
     return 0;
+}
+
+void enterData(int *telefone, int *pulLocal, int *pulInter){
+	
+	for(int i = 0; i < 2; ++i){
+		printf("Digite o numero do telefone da [%i] Residencia -> ", i+1);
+		scanf("%i", *telefone);
+	}
 }
